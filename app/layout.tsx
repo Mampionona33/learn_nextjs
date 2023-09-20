@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ul>
+        <ul className="nav">
           <li>
             <Link href={"/home"}>Home</Link>
           </li>
@@ -24,6 +24,9 @@ export default function RootLayout({
           </li>
           <li>
             <Link href={"/settings"}>Settings</Link>
+          </li>
+          <li>
+            <Link href={"/products"}>Products</Link>
           </li>
         </ul>
         {children}
