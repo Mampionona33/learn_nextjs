@@ -5,7 +5,7 @@ import { SessionProvider } from "next-auth/react";
 import { singIn, singOut } from "next-auth/client";
 
 const inter = Inter({ subsets: ["latin"] });
-
+// https://reacthustle.com/blog/nextjs-redirect-after-login
 export default function RootLayout({
   children,
   session,
