@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { SessionProvider } from "next-auth/react";
+import { singIn, singOut } from "next-auth/client";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,14 @@ export default function RootLayout({
             <li>
               <Link href={"/products"}>Products</Link>
             </li>
+            <li>
+              <Link href={"/products"}>singIn</Link>
+            </li>
+            <li>
+              <Link href={"/products"}>singOut</Link>
+            </li>
           </ul>
+
           {children}
         </body>
       </html>
