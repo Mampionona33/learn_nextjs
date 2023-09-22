@@ -43,7 +43,6 @@ const SignInPage = () => {
             />
           </div>
           <div className="mb-4 text-left">
-            {" "}
             {/* Ajoutez la classe text-left pour aligner le texte à gauche */}
             <label htmlFor="password" className="block text-gray-600">
               Password:
